@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_partial_data_social_data",
+  "info": {
+    "name": "social",
+    "icon": "share-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "alt": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

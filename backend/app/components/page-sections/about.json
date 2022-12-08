@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_sections_abouts",
+  "info": {
+    "name": "about",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partial-data.section-data",
+      "required": true
+    }
+  }
+}

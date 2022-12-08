@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skillsets",
+  "info": {
+    "name": "Skillset",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "skills": {
+      "via": "skillsets",
+      "collection": "skill",
+      "dominant": true
+    },
+    "name": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    }
+  }
+}

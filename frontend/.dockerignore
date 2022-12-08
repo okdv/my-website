@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env*
+!.env.production
+packge-lock.json
+npm-debug.log

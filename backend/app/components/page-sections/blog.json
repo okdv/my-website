@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_page_sections_blogs",
+  "info": {
+    "name": "blog",
+    "icon": "blog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partial-data.section-data",
+      "required": true
+    },
+    "posts": {
+      "collection": "post"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_partial_data_parallax_layers",
+  "info": {
+    "name": "parallax-layer",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "displacement": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-data.meta",
+      "required": true
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.header"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "page-sections.about",
+        "page-sections.skills",
+        "page-sections.work",
+        "page-sections.blog",
+        "page-sections.contact"
+      ]
+    },
+    "parallax": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.parallax"
+    }
+  }
+}

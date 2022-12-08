@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_sections_collections",
+  "info": {
+    "name": "collection",
+    "icon": "folder"
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partial-data.section-data"
+    },
+    "posts": {
+      "collection": "post"
+    }
+  }
+}

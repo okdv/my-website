@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_page_data_section_data",
+  "info": {
+    "name": "section",
+    "icon": "columns",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nameId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "socials": {
+      "collection": "social"
+    },
+    "cta": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  }
+}

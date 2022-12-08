@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_page_sections_works",
+  "info": {
+    "name": "work",
+    "icon": "network-wired",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partial-data.section-data",
+      "required": true
+    },
+    "works": {
+      "collection": "work"
+    }
+  }
+}

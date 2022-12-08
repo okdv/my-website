@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		
+		<meta charset="utf-8" />
+		<link 
+		rel="icon"
+		href="%sveltekit.assets%/favicon.png"
+		id="favicon"  
+		/>
+		<!-- Material Icons -->
+		<link
+		id="mui-icons"
+		href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		nonce="%sveltekit.nonce%"
+		/>
+		<!-- Roboto -->
+		<link
+		id="roboto"
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+		nonce="%sveltekit.nonce%"
+		/>
+		<!-- Roboto Mono -->
+		<link
+		id="roboto-mono"
+		href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+		nonce="%sveltekit.nonce%"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<script id="fa-icons" src="https://kit.fontawesome.com/c39b392e49.js" crossorigin="anonymous" nonce="%sveltekit.nonce%"></script>
+		<script>
+			window.addEventListener('load', (e) => {
+				document.getElementById('mui-icons').setAttribute('rel', 'stylesheet');
+				document.getElementById('roboto').setAttribute('rel', 'stylesheet');
+				document.getElementById('roboto-mono').setAttribute('rel', 'stylesheet');
+			});
+		</script>
+		%sveltekit.head%
+	</head>
+	<body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 m-0 p-0 w-full">
+		<div>%sveltekit.body%</div>
+	</body>
+</html>

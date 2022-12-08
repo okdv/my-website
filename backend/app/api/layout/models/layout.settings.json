@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "layouts",
+  "info": {
+    "name": "Layout",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "copyright": {
+      "type": "string",
+      "required": true
+    },
+    "socials": {
+      "collection": "social"
+    },
+    "support": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

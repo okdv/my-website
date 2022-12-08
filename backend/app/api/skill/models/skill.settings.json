@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills",
+  "info": {
+    "name": "Skill",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "uid",
+      "required": true,
+      "targetField": "title"
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "level": {
+      "type": "decimal",
+      "required": true,
+      "max": 1,
+      "min": 0
+    },
+    "works": {
+      "via": "skills",
+      "collection": "work"
+    },
+    "skillsets": {
+      "via": "skills",
+      "collection": "skillset"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

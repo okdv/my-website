@@ -1,0 +1,55 @@
+version: '3'
+services:
+  strapi:
+    image: strapi/strapi
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_NAME: ${DB_NAME}
+      DATABASE_HOST: postgres
+      DATABASE_PORT: ${DB_PORT}
+      DATABASE_USERNAME: ${DB_USERNAME}
+      DATABASE_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./backend/app:/srv/app
+    networks:
+      frontend:
+        ipv4_address: 172.69.0.2
+    ports:
+      - '1337:1337'
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${POSTGRES_USERNAME}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./backend/data:/var/lib/postgresql/data
+    networks:
+      frontend:
+        ipv4_address: 172.69.0.3
+    ports:
+      - '5432:5432'
+
+  frontend:
+    build: .
+    volumes:
+      - ./frontend:/usr/src/app
+    networks:
+      frontend:
+        ipv4_address: 172.69.0.4
+    ports:
+      - 3000:3000
+    depends_on:
+      - strapi
+      - postgres
+
+networks:
+  frontend:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.69.0.0/16
+          gateway: 172.69.0.1

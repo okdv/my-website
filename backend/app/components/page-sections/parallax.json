@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_sections_parallaxes",
+  "info": {
+    "name": "parallax",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "displacement": {
+      "type": "string",
+      "required": false
+    },
+    "layers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partial-data.parallax-layer",
+      "required": true
+    }
+  }
+}

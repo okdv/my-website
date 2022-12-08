@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_page_sections_contacts",
+  "info": {
+    "name": "contact",
+    "icon": "mail-bulk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partial-data.section-data",
+      "required": true
+    },
+    "contactApps": {
+      "collection": "social"
+    },
+    "submissionTitle": {
+      "type": "string"
+    },
+    "submissionSuccessText": {
+      "type": "text"
+    },
+    "submissionFailText": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/skillsets",
+      "handler": "skillset.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skillsets/count",
+      "handler": "skillset.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skillsets/:id",
+      "handler": "skillset.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/skillsets",
+      "handler": "skillset.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/skillsets/:id",
+      "handler": "skillset.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/skillsets/:id",
+      "handler": "skillset.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

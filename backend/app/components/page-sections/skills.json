@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_page_sections_skills",
+  "info": {
+    "name": "skills",
+    "icon": "graduation-cap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partial-data.section-data",
+      "required": true
+    },
+    "skillLevels": {
+      "type": "json"
+    },
+    "skillsets": {
+      "collection": "skillset"
+    }
+  }
+}
