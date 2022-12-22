@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="okd.svg"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#0f172a;stroke-width:0.307742"
+       id="path221"
+       cx="21"
+       cy="25.5"
+       rx="20"
+       ry="22.5" />
+    <ellipse
+       style="fill:#0f172a;stroke-width:0.51403"
+       id="path221-5"
+       cx="71.999992"
+       cy="49.5"
+       rx="27"
+       ry="46.5" />
+    <rect
+       style="fill:#0f172a;fill-opacity:1;stroke-width:0.27375"
+       id="rect644"
+       width="21"
+       height="45"
+       x="1"
+       y="51" />
+    <rect
+       style="fill:#0f172a;fill-opacity:1;stroke-width:0.447439"
+       id="rect644-7"
+       width="27.146154"
+       height="93"
+       x="45"
+       y="3" />
+    <path
+       style="fill:#0f172a;fill-opacity:1;stroke:none;stroke-width:0.253454px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 21,51 H 41 L 21.003121,76 Z"
+       id="path808"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#0f172a;fill-opacity:1;stroke:none;stroke-width:0.253454px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 21,96 H 41 L 21.003121,71 Z"
+       id="path808-6"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>

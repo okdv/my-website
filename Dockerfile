@@ -11,7 +11,7 @@ RUN npm run build
 FROM node:16-alpine
 
 WORKDIR /app
-COPY --from=build /app/package*.json /.
+COPY --from=build /app/package*.json ./
 
 RUN npm ci --production --ignore-scripts
 RUN npm audit fix
