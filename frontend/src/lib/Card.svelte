@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { PUBLIC_API } from '$env/static/public';
     interface Card {
         title: string;
         description?: string;
@@ -13,7 +14,7 @@
 <div class="group drop-shadow-sm w-full rounded-md p-4 bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-800 duration-100 hover:scale-95 space-y-1 cursor-pointer">
     {#if data.image} 
     <div class="container w-full p-2 rounded-sm duration-100 bg-slate-50 dark:bg-slate-600 group-hover:bg-transparent">
-        <img src="http://localhost:1337{data.image}" class="object-contain h-44  mx-auto" alt="alt" />
+        <img src="{PUBLIC_API}/{data.image}" class="object-contain h-44  mx-auto" alt="alt" />
     </div>
     {/if}
     <h3 class="text-lg truncate"><b>{data.title}</b></h3>
