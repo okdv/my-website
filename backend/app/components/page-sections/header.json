@@ -7,12 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "data": {
-      "type": "component",
-      "repeatable": false,
-      "component": "partial-data.section-data",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true

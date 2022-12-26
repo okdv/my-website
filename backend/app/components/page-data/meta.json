@@ -17,20 +17,7 @@
       "required": true,
       "maxLength": 160
     },
-    "favicon": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "author": {
-      "type": "string"
-    },
-    "copyright": {
       "type": "string"
     },
     "slug": {

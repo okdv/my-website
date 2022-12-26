@@ -606,9 +606,6 @@
                 "title": {
                   "type": "string"
                 },
-                "color": {
-                  "type": "string"
-                },
                 "posts": {
                   "type": "array",
                   "items": {
