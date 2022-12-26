@@ -9,7 +9,7 @@ export const GET: RequestHandler = async function GET({ url, setHeaders}) {
     const q: string = url.searchParams.get('q') ?? "";
     try {
         const query = `
-            query GetPosts($search: String, $sort: String) {
+            query GetPostsSearch($search: String, $sort: String) {
                 tags {
                     name
                     title

@@ -7,7 +7,7 @@ export const GET: RequestHandler = async function GET({ params, setHeaders}) {
     const { name } = params;
     try {
         const query = `
-            query getWorksBySkill(
+            query GetWorksBySkill(
                 $name: String!
             ) {
                 skills(

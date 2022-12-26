@@ -8,7 +8,7 @@ export const load: PageLoad = async ({ params }) => {
 
     try {
         const query = `
-            query getPosts(
+            query GetPosts(
                 $slug: String!
             ) {
                 posts(
@@ -33,7 +33,6 @@ export const load: PageLoad = async ({ params }) => {
                     tags {
                         name
                         title
-                        color
                         posts {
                             title
                             name
