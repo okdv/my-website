@@ -7,7 +7,6 @@
 </script>
 <navbar class="flex justify-between py-2 px-4 sticky top-0 z-50 bg-slate-900 bg-opacity-50">
     <div class="space-x-2 md:space-x-6 text-3xl font-semibold">
-        <Link data={{link: "https://git.otho.dev", title: 'git'}} />
         {#if slug !== "/"}
                 <Link data={{link: "/", title: 'home'}} />
         {/if}
