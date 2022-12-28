@@ -8,7 +8,7 @@
         <a class="card" href="/blog/posts/{post.name}">
             <Card data={{
                 title: post.title,
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                description: post.description ?? '',
                 cta: true,
                 ctaText: "see post"
             }} />
