@@ -98,11 +98,11 @@
   }
 
   .md a {
-    @apply text-blue-500 hover: text-blue-700 duration-100 ease-in-out;
+    @apply text-blue-500 hover:text-blue-700 duration-100 ease-in-out;
   }
 
   .body-auto-top {
-    @apply top-[350px] sm: top-[400px] md:top-[400px] lg:top-[500px] xl:top-[600px] 2xl:top-[700px];
+    @apply top-[350px] sm:top-[400px] md:top-[400px] lg:top-[500px] xl:top-[600px] 2xl:top-[700px];
   }
 
   @media (min-width: 2000px) {
