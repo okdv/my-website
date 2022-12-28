@@ -12,6 +12,7 @@ module.exports = {
         "github":"#3b82f6",
         "gitlab":"#FC6D27",
         "blog":"#3b82f6",
+        "gitea":"#609926"
       },
     },
   },
@@ -22,7 +23,7 @@ module.exports = {
       variants: ['hover', 'before', 'hover:before']
     },
     {
-      pattern: /text-(instagram|discord|github|gitlab|blog)/,
+      pattern: /text-(instagram|discord|github|gitlab|blog|gitea)/,
       variants: ['hover']
     },
     {
