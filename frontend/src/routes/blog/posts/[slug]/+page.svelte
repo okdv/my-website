@@ -8,12 +8,12 @@
 </script>
 
 <svelte:head>
-    <title>{data.meta.title}</title>
+    <title>{data.post.title ?? 'Otho DuBoise - Blog Post'}</title>
     <meta name="author" content="{data.meta.author ?? 'Otho DuBoise'}" />
-    <meta name="description" content="{data.meta.description ?? ''}" />
-    <meta property="og:description" content="{data.meta.description ?? ''}" />
-    <meta property="og:title" content="{data.meta.title}" />
-    <meta name="twitter:title" content="{data.meta.title}" />
+    <meta name="description" content="{data.post.description ?? ''}" />
+    <meta property="og:description" content="{data.post.description ?? ''}" />
+    <meta property="og:title" content="{data.post.title ?? 'Otho DuBoise - Blog Post'}" />
+    <meta name="twitter:title" content="{data.post.title ?? 'Otho DuBoise - Blog Post'}" />
 </svelte:head>
 
 <div class="px-6">

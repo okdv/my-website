@@ -67,12 +67,12 @@
 </script>
 
 <svelte:head>
-    <title>{data.meta.title}</title>
+    <title>{data.meta.title ?? "Otho DuBoise - Posts"}</title>
     <meta name="author" content="{data.meta.author ?? 'Otho DuBoise'}" />
-    <meta name="description" content="{data.meta.description ?? ''}" />
-    <meta property="og:description" content="{data.meta.description ?? ''}" />
-    <meta property="og:title" content="{data.meta.title}" />
-    <meta name="twitter:title" content="{data.meta.title}" />
+    <meta name="description" content="{data.meta.description ?? 'Search and filter your way through all of my blog posts, there is probably something that will peak your interest'}" />
+    <meta property="og:description" content="{data.meta.description ?? 'Search and filter your way through all of my blog posts, there is probably something that will peak your interest'}" />
+    <meta property="og:title" content="{data.meta.title ?? 'Otho DuBoise - Posts'}" />
+    <meta name="twitter:title" content="{data.meta.title ?? 'Otho DuBoise - Posts'}" />
 </svelte:head>
 
 <div class="md:flex gap-2">
