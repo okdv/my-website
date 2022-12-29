@@ -65,6 +65,16 @@
     }
 
 </script>
+
+<svelte:head>
+    <title>{data.meta.title}</title>
+    <meta name="author" content="{data.meta.author ?? 'Otho DuBoise}" />
+    <meta name="description" content="{data.meta.description ?? ''}" />
+    <meta property="og:description" content="{data.meta.description ?? ''}" />
+    <meta property="og:title" content="{data.meta.title}" />
+    <meta name="twitter:title" content="{data.meta.title}" />
+</svelte:head>
+
 <div class="md:flex gap-2">
     <aside class="w-full md:w-96">
         <form class="rounded-md p-2 space-y-4 dark:bg-slate-700 dark:text-slate-200" on:submit|preventDefault>

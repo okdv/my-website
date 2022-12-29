@@ -34,6 +34,11 @@
 
 <svelte:head>
     <title>{data.meta.title}</title>
+    <meta name="author" content="{data.meta.author ?? 'Otho DuBoise}" />
+    <meta name="description" content="{data.meta.description ?? ''}" />
+    <meta property="og:description" content="{data.meta.description ?? ''}" />
+    <meta property="og:title" content="{data.meta.title}" />
+    <meta name="twitter:title" content="{data.meta.title}" />
 </svelte:head>
 
 <Modal />
