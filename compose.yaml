@@ -2,6 +2,7 @@ version: '3'
 services:
   backend:
     image: my-website/backend
+    container_name: my-website_backend_1
     build:
       context: .
       dockerfile: ./backend.Dockerfile 
@@ -23,7 +24,7 @@ services:
 
   postgres:
     image: postgres
-    restart: always
+    restart: unless-stopped
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${POSTGRES_USERNAME}
@@ -38,6 +39,7 @@ services:
 
   frontend:
     image: my-website/frontend
+    container_name: my-website_frontend_1
     build:
       context: .
       dockerfile: ./frontend.Dockerfile

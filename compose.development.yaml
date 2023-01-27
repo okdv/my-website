@@ -2,6 +2,8 @@ version: '3'
 services:
   strapi:
     image: strapi/strapi
+    container_name: my-website_backend-dev_1
+    restart: unless-stopped
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: ${DB_NAME}
@@ -15,12 +17,13 @@ services:
       frontend-dev:
         ipv4_address: 172.99.1.2
     ports:
-      - '1337:1337'
+      - '1887:1337'
     depends_on:
       - postgres
 
   postgres:
     image: postgres
+    restart: unless-stopped
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${POSTGRES_USERNAME}
@@ -35,16 +38,20 @@ services:
 
   frontend:
     image: my-website/frontend-dev
+    container_name: my-website_frontend-dev_1
+    restart: unless-stopped
     build: 
       context: .
       dockerfile: frontend-dev.Dockerfile
+      args:
+        NODE_ENV: ${NODE_ENV}
     volumes:
       - ./frontend:/usr/src/app
     networks:
       frontend-dev:
         ipv4_address: 172.99.1.4
     ports:
-      - 3000:3000
+      - 4000:3000
     depends_on:
       - strapi
       - postgres
