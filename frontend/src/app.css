@@ -93,7 +93,7 @@
   }
 
   .md img {
-    @apply w-1/2 max-w-3xl;
+    @apply w-3/4 max-w-3xl mx-auto;
     min-width: 200px;
   }
 

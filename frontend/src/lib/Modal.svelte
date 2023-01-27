@@ -31,7 +31,7 @@
 {#if modal.type !== null}
     <div class="fixed top-0 left-0 w-full h-screen flex justify-center align-middle opacity-100 bg-transparent z-50">
         <div class="bg-slate-100 opacity-20 absolute w-full h-full" on:click={close} on:keydown|preventDefault />
-        <div class="space-y-4 w-11/12 md:w-3/4 md:h-auto rounded-md overflow-y-scroll p-4 bg-slate-900 m-auto z-50">
+        <div class="space-y-4 w-11/12 md:w-3/4 md:h-auto max-h-screen rounded-md overflow-y-auto p-4 bg-slate-900 m-auto z-50">
             {#if modal.title}
                 <h1 class="text-2xl">{modal.title}</h1>
             {/if}
