@@ -1,8 +1,8 @@
 {
-  "name": "app",
+  "name": "my-website-backend",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "0.2.0",
+  "description": "My personal website, otho.dev, Strapi backend",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -26,7 +26,9 @@
     "strapi-utils": "3.6.8"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Otho DuBoise",
+    "email": "dev@otho.dev",
+    "url": "https://otho.dev"
   },
   "strapi": {
     "uuid": "577b90ae-9b5f-4a7b-8065-ea4580006378"
