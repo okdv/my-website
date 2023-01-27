@@ -4,6 +4,10 @@ WORKDIR /app
 COPY ./.env .
 COPY ./frontend .
 
+ARG NODE_ENV
+
+ENV NODE_ENV=${NODE_ENV}
+
 RUN npm ci
 RUN npm audit fix
 RUN npm run build
@@ -15,6 +19,10 @@ COPY --from=build /app/package*.json ./
 
 RUN npm ci --production --ignore-scripts
 RUN npm audit fix
+
+ARG PUBLIC_URL
+
+ENV ORIGIN=${PUBLIC_URL}
 
 COPY --from=build /app/build ./
 

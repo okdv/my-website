@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { PUBLIC_API } from "$env/static/public"; 
+    import { PUBLIC_MEDIA_URL } from "$env/static/public"; 
     type ParallaxData = {
         name: string;
         image: {
@@ -29,6 +29,6 @@
         {#if i === (layers.length-1)}
             <div class="{w > 420 ? "body-auto-top" : "top-[300px]"} bg-slate-900 w-full h-full left-0 absolute will-change-transform" style="transform: translate3d(0,{-y * (i+1) / (layers.length - 1)}px, 0); z-index: {i+1};"></div>
         {/if}
-        <img class="absolute will-change-transform left-0 w-full top-36 sm:top-32 md:top-16 lg:top-0" style="transform: translate3d(0,{-y * (i+1) / (layers.length - 1)}px, 0); z-index: {i+1};" alt={layer.name} id={layer.name} src="{PUBLIC_API + layer.image.url}" />
+        <img class="absolute will-change-transform left-0 w-full top-36 sm:top-32 md:top-16 lg:top-0" style="transform: translate3d(0,{-y * (i+1) / (layers.length - 1)}px, 0); z-index: {i+1};" alt={layer.name} id={layer.name} src="{PUBLIC_MEDIA_URL + layer.image.url}" />
     {/each}
 </div>

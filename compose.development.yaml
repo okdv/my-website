@@ -2,7 +2,6 @@ version: '3'
 services:
   strapi:
     image: strapi/strapi
-    env_file: .env.development
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: ${DB_NAME}
@@ -22,7 +21,6 @@ services:
 
   postgres:
     image: postgres
-    env_file: .env.development
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${POSTGRES_USERNAME}
@@ -39,7 +37,7 @@ services:
     image: my-website/frontend-dev
     build: 
       context: .
-      dockerfile: development.Dockerfile
+      dockerfile: frontend-dev.Dockerfile
     volumes:
       - ./frontend:/usr/src/app
     networks:
